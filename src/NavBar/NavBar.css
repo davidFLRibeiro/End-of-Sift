@@ -1,0 +1,22 @@
+nav {
+  padding: 1% 0;
+  background-color: #aaa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+li {
+  display: inline;
+  margin-right: 15px;
+}
