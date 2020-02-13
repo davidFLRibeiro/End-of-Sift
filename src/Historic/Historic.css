@@ -11,18 +11,9 @@ body {
   min-width: 250px;
 }
 
-nav {
-  padding: 1% 0;
-  background-color: #aaa;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
-}
-
 header {
   padding: 45px 15px;
+  margin-top: 25px;
 }
 
 table {

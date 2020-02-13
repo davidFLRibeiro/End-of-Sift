@@ -13,7 +13,8 @@ export class App extends Component {
       <Router>
         <div>
           <NavBar />
-          <Route exact path='/addshift' component={AddShift}></Route>
+          <Route exact path='/' component={LandingPage}></Route>
+          <Route exact path='/Addshift' component={AddShift}></Route>
           <Route exact path='/EditShift' component={EditShift}></Route>
           <Route exact path='/AddNewUser' component={AddNewUser}></Route>
           <Route exact path='/Historic' component={Historic}></Route>
