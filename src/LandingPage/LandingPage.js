@@ -22,7 +22,7 @@ export class LandingPage extends Component {
           <header>
             <h3>Start End of Shift</h3>
           </header>
-          <form class='sign-up form'>
+          <form className='sign-up form'>
             <div>
               <label htmlFor='username'>User Name</label>
               <input type='text' name='username' id='username' />

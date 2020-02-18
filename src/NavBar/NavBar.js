@@ -10,6 +10,9 @@ export class NavBar extends Component {
           NavBar
           <ul>
             <li>
+              <Link to='/'>Home</Link>
+            </li>
+            <li>
               <Link to='/AddShift'>Add Shift</Link>
             </li>
             <li>
