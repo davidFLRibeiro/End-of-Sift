@@ -1,39 +1,84 @@
 import React, { Component } from 'react';
 import './AddShift.css';
 import shiftContext from '../context/shiftContext';
+import config from '../config';
 
 export class AddShift extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cupping: 0,
+      cupping: 0.0,
       vault_money: 0.0,
       shift_money: 0.0,
       jetwash: 0.0,
       galp_fleet: 0.0,
       local_credit: 0.0,
       affractions: 0.0,
-      discout_card: 0.0,
+      discount_card: 0.0,
       discount: 0.0,
       intern_consumption: 0.0,
       escapes: 0.0,
-      resume: 0.0,
+      resume_genesis: 0.0,
       atm: 0.0,
       visa: 0.0,
-      devolutions: 0.0
+      devolutions: 0.0,
+      handleChange: 1,
+      shifts: []
     };
+    this.handleAddShift = this.handleAddShift.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(e) {
     const value = e.target.value;
-    console.log(e.target.name, e.target.value);
+    //console.log(e.target.name, e.target.value);
     this.setState({ [e.target.name]: value });
   }
 
+  handleAddShift = e => {
+    e.preventDefault();
+
+    const shift = {
+      cupping: this.state.cupping,
+      vault_money: this.state.vault_money,
+      shift_money: this.state.shift_money,
+      jetwash: this.state.jetwash,
+      galp_fleet: this.state.galp_fleet,
+      local_credit: this.state.local_credit,
+      affractions: this.state.affractions,
+      discount_card: this.state.discount_card,
+      discount: this.state.discount,
+      intern_consumption: this.state.intern_consumption,
+      escapes: this.state.escapes,
+      resume_genesis: this.state.resume_genesis,
+      atm: this.state.atm,
+      visa: this.state.visa,
+      devolutions: this.state.devolutions
+    };
+    fetch(`${config.API_ENDPOINT}api/shifts`, {
+      method: 'POST',
+      body: JSON.stringify(shift),
+      headers: {
+        'content-type': 'application/json'
+      }
+    })
+      .then(res => {
+        if (!res.ok) {
+          return res.json().then(error => Promise.reject(error));
+        }
+        return res.json();
+      })
+      .then(data => {
+        this.setState({ shift: [...this.state.shifts, data] });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  };
+
   static contextType = shiftContext;
   render() {
-    console.log(this.context);
+    //console.log(this.context);
     return (
       <div>
         <header role='banner'>
@@ -50,22 +95,23 @@ export class AddShift extends Component {
               onChange={this.handleChange}
               value={this.state.cupping}
             ></input>
-            <label htmlFor='vault-money'>Vault money</label>
+            <label htmlFor='vault_money'>Vault Money</label>
             <input
               type='number'
               id='vault_money'
               placeholder='vault_money'
+              name='vault_money'
               onChange={this.handleChange}
               value={this.state.vault_money}
             ></input>
           </div>
           <div className='form-section'>
-            <label htmlFor='shift-money'>Shift money</label>
+            <label htmlFor='shift_money'>Shift money</label>
             <input
               type='number'
-              id='shift-money'
-              placeholder='shift-money'
-              name='shift-money'
+              id='shift_money'
+              placeholder='shift_money'
+              name='shift_money'
               onChange={this.handleChange}
               value={this.state.shift_money}
             ></input>
@@ -81,21 +127,21 @@ export class AddShift extends Component {
           </div>
           <h2>Galp Fleet & Local Credit</h2>
           <div className='form-section'>
-            <label htmlFor='galp-fleet'>Galp Fleet</label>
+            <label htmlFor='galp_fleet'>Galp Fleet</label>
             <input
               type='number'
-              id='galp-fleet'
+              id='galp_fleet'
               placeholder='galp fleet'
-              name='galp-fleet'
+              name='galp_fleet'
               onChange={this.handleChange}
               value={this.state.galp_fleet}
             ></input>
-            <label htmlFor='local-credit'>Local Credit</label>
+            <label htmlFor='local_credit'>Local Credit</label>
             <input
               type='number'
-              id='local-credit'
-              placeholder='local-credit'
-              name='local-credit'
+              id='local_credit'
+              placeholder='local_credit'
+              name='local_credit'
               onChange={this.handleChange}
               value={this.state.local_credit}
             ></input>
@@ -114,11 +160,11 @@ export class AddShift extends Component {
             <label htmlFor='discount_card'>Discount Card</label>
             <input
               type='number'
-              id='discout_card'
-              placeholder='discount card'
-              name='discount card'
+              id='discount_card'
+              placeholder='discount_card'
+              name='discount_card'
               onChange={this.handleChange}
-              state={this.state.discout_card}
+              value={this.state.discount_card}
             ></input>
           </div>
           <div className='form-section'>
@@ -131,12 +177,12 @@ export class AddShift extends Component {
               onChange={this.handleChange}
               value={this.state.discount}
             ></input>
-            <label htmlFor='intern-consumption'>Consumption</label>
+            <label htmlFor='intern_consumption'>Consumption</label>
             <input
               type='number'
-              id='intern-consumption'
+              id='intern_consumption'
               placeholder='intern consumption'
-              name='intern-consumption'
+              name='intern_consumption'
               onChange={this.handleChange}
               value={this.state.intern_consumption}
             ></input>
@@ -162,14 +208,14 @@ export class AddShift extends Component {
             ></input>
           </div>
           <div className='form-section'>
-            <label htmlFor='resume'>Genesis resume</label>
+            <label htmlFor='resume_genesis'>Genesis resume</label>
             <input
               type='number'
-              id='resume'
-              placeholder='genesis resume'
-              name='resume'
+              id='resume_genesis'
+              placeholder='resume_genesis'
+              name='resume_genesis'
               onChange={this.handleChange}
-              value={this.state.resume}
+              value={this.state.resume_genesis}
             ></input>
           </div>
           <div className='form-section'>
@@ -193,7 +239,9 @@ export class AddShift extends Component {
             ></input>
           </div>
           <div className='form-section'>
-            <button type='submit'>Save</button>
+            <button type='buttoun' onClick={this.handleAddShift}>
+              Save
+            </button>
           </div>
         </form>
       </div>

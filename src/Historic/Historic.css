@@ -11,24 +11,17 @@ body {
   min-width: 250px;
 }
 
-header {
-  padding: 45px 15px;
-  margin-top: 25px;
+.shift_list {
+  border: 3px solid red;
+  margin-top: 100px;
+  padding: 20px;
 }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+.shift_list ul li {
+  margin: 5px;
+  display: block;
 }
 
-td,
-th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
+ul {
+  padding: 20px;
 }

@@ -1,36 +1,43 @@
 import React, { Component } from 'react';
+import shiftContext from '../context/shiftContext';
 import './Historic.css';
+import { Link, Redirect } from 'react-router-dom';
 
 export class Historic extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      redirect: false,
+      shiftEdit: 0
+    };
+  }
+  handleEditShift = e => {
+    e.preventDefault();
+    this.setState({ redirect: true, shiftEdit: e.target.id });
+  };
+
+  static contextType = shiftContext;
   render() {
+    console.log(this.context);
+    const { shifts = [] } = this.context;
+    if (this.state.redirect) {
+      return <Redirect to={`/EditShift/${this.state.shiftEdit}`} />;
+    }
     return (
-      <div>
-        <header>
-          <h1>Historic</h1>
-        </header>
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>Date</th>
-            <th>diference</th>
-          </tr>
-          <tr>
-            <td>David Ribeiro</td>
-            <td>30-12-2019</td>
-            <td>1 euro</td>
-          </tr>
-          <tr>
-            <td>Marisa Mota</td>
-            <td>21-09-2019</td>
-            <td>2 euros</td>
-          </tr>
-          <tr>
-            <td>Jhon Ribeiro</td>
-            <td>01-02-2020</td>
-            <td>1 euro</td>
-          </tr>
-        </table>
-      </div>
+      <section className='shift_list'>
+        <ul>
+          {shifts.map(shift => (
+            <li
+              key={shift.id}
+              id={shift.id}
+              onClick={this.handleEditShift.bind(this)}
+            >
+              {' '}
+              {shift.date_created}
+            </li>
+          ))}
+        </ul>
+      </section>
     );
   }
 }

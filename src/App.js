@@ -24,7 +24,7 @@ export class App extends Component {
         return shiftsRes.json();
       })
       .then(shifts => {
-        console.log(shifts);
+        // console.log(shifts);
         this.setState({ shifts });
       })
       .catch(error => {
@@ -36,7 +36,7 @@ export class App extends Component {
     const shiftList = {
       shifts: this.state.shifts
     };
-    console.log(shiftList);
+    //console.log(shiftList);
     return (
       <shiftContext.Provider value={shiftList}>
         <Router>
@@ -44,7 +44,11 @@ export class App extends Component {
             <NavBar />
             <Route exact path='/' component={LandingPage}></Route>
             <Route exact path='/addshift' component={AddShift}></Route>
-            <Route exact path='/EditShift' component={EditShift}></Route>
+            <Route
+              exact
+              path='/EditShift/:shiftId'
+              component={EditShift}
+            ></Route>
             <Route exact path='/AddNewUser' component={AddNewUser}></Route>
             <Route exact path='/Historic' component={Historic}></Route>
           </div>

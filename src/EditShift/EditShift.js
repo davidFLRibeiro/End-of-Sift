@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import './EditShift.css';
+import shiftContext from '../context/shiftContext';
 
 export class AddShift extends Component {
+  static contextType = shiftContext;
   render() {
+    const { shiftId } = this.props.match.params;
+    const shiftdatarray = this.context.shifts.filter(
+      shift => shift.id === parseInt(shiftId)
+    );
+    console.log(this.props.match.params, shiftdatarray[0]);
     return (
       <div>
         <header role='banner'>
@@ -10,12 +17,13 @@ export class AddShift extends Component {
         </header>
         <form className='form-section'>
           <div className='form-section'>
-            <label for='cupping'>Nº of cupping</label>
+            <label htmlFor='cupping'>Nº of cupping</label>
             <input
               type='number'
               id='cupping'
               placeholder='nº of cuppings'
               name='cupping'
+              value={shiftdatarray[0].cupping}
             ></input>
             <label for='vault-money'>Vault money</label>
             <input
