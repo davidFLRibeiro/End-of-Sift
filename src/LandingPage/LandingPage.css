@@ -26,3 +26,7 @@ section:nth-child(even) {
 #password {
   margin-left: 20px;
 }
+
+.banner {
+  margin-top: 200px;
+}

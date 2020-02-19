@@ -22,7 +22,7 @@ export class AddShift extends Component {
       atm: 0.0,
       visa: 0.0,
       devolutions: 0.0,
-      handleChange: 1,
+
       shifts: []
     };
     this.handleAddShift = this.handleAddShift.bind(this);
@@ -81,9 +81,9 @@ export class AddShift extends Component {
     //console.log(this.context);
     return (
       <div>
-        <header role='banner'>
+        <div className='banner'>
           <h1>End of Shift</h1>
-        </header>
+        </div>
         <form className='form-section'>
           <div className='form-section'>
             <label htmlFor='cupping'>Nº of cupping</label>

@@ -25,6 +25,7 @@ export class Historic extends Component {
     }
     return (
       <section className='shift_list'>
+        <h1>HISTORIC</h1>
         <ul>
           {shifts.map(shift => (
             <li

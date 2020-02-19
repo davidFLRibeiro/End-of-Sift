@@ -5,10 +5,10 @@ export class LandingPage extends Component {
   render() {
     return (
       <div>
-        <header role='banner'>
+        <div className='banner'>
           <h1>End of Shift</h1>
           <h2>Let´s finish your work for today...</h2>
-        </header>
+        </div>
         <section>
           <header>
             <h3>Don´t forget the required fields</h3>

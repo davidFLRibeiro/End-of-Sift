@@ -12,15 +12,19 @@ body {
 
 header {
   padding: 45px 15px;
-  margin-top: 25px;
+  margin-top: 200px;
 }
 
 h2 {
   margin: auto;
 }
 
+.banner {
+  margin-top: 200px;
+}
+
 .form-section {
-  padding-top: 10px;
+  padding-top: 100px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
