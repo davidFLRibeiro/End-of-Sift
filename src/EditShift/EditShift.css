@@ -20,6 +20,7 @@ h2 {
 }
 
 .form-section {
+  border-radius: 5%;
   padding-top: 10px;
   display: flex;
   flex-flow: row wrap;

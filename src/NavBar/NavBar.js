@@ -7,7 +7,6 @@ export class NavBar extends Component {
     return (
       <div>
         <nav className='nav-bar'>
-          NavBar
           <ul>
             <li>
               <Link to='/'>Home</Link>

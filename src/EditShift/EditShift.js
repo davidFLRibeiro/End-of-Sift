@@ -6,6 +6,7 @@ export class AddShift extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      id: 0,
       cupping: 0.0,
       vault_money: 0.0,
       shift_money: 0.0,
@@ -37,6 +38,7 @@ export class AddShift extends Component {
     e.preventDefault();
 
     const shift = {
+      id: this.state.id,
       cupping: this.state.cupping,
       vault_money: this.state.vault_money,
       shift_money: this.state.shift_money,
@@ -53,7 +55,9 @@ export class AddShift extends Component {
       visa: this.state.visa,
       devolutions: this.state.devolutions
     };
-    fetch(`${config.API_ENDPOINT}api/shifts`, {
+    const id = this.state.id;
+    console.log('made it to shift id', shift);
+    fetch(`${config.API_ENDPOINT}api/shifts/${id}`, {
       method: 'PATCH',
       body: JSON.stringify(shift),
       headers: {
@@ -83,6 +87,7 @@ export class AddShift extends Component {
     );
     console.log(this.props.match.params, shiftdatarray[0]);
     this.setState({
+      id: shiftdatarray[0].id,
       cupping: shiftdatarray[0].cupping,
       vault_money: shiftdatarray[0].vault_money,
       shift_money: shiftdatarray[0].shift_money,
@@ -266,7 +271,9 @@ export class AddShift extends Component {
             ></input>
           </div>
           <div className='form-section'>
-            <button type='submit'>Save</button>
+            <button type='submit' onClick={this.handleEditShift}>
+              Save
+            </button>
           </div>
         </form>
       </div>
