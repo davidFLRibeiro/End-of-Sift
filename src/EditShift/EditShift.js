@@ -76,13 +76,36 @@ export class AddShift extends Component {
 
   static contextType = shiftContext;
 
+  componentDidMount() {
+    const { shiftId } = this.props.match.params;
+    const shiftdatarray = this.context.shifts.filter(
+      shift => shift.id === parseInt(shiftId)
+    );
+    console.log(this.props.match.params, shiftdatarray[0]);
+    this.setState({
+      cupping: shiftdatarray[0].cupping,
+      vault_money: shiftdatarray[0].vault_money,
+      shift_money: shiftdatarray[0].shift_money,
+      jetwash: shiftdatarray[0].jetwash,
+      galp_fleet: shiftdatarray[0].galp_fleet,
+      local_credit: shiftdatarray[0].local_credit,
+      affractions: shiftdatarray[0].affractions,
+      discount_card: shiftdatarray[0].discount_card,
+      discount: shiftdatarray[0].discount,
+      intern_consumption: shiftdatarray[0].intern_consumption,
+      escapes: shiftdatarray[0].escapes,
+      resume_genesis: shiftdatarray[0].resume_genesis,
+      atm: shiftdatarray[0].atm,
+      visa: shiftdatarray[0].visa,
+      devolutions: shiftdatarray[0].devolutions
+    });
+  }
+
   render() {
     const { shiftId } = this.props.match.params;
     const shiftdatarray = this.context.shifts.filter(
       shift => shift.id === parseInt(shiftId)
     );
-
-    console.log(this.props.match.params, shiftdatarray[0]);
     return (
       <div>
         <header role='banner'>
@@ -96,7 +119,7 @@ export class AddShift extends Component {
               id='cupping'
               placeholder='nº of cuppings'
               name='cupping'
-              value={shiftdatarray[0].cupping}
+              value={this.state.cupping}
               onChange={this.handleEditChange}
             ></input>
             <label htmlFor='vault_money'>Vault Money</label>
@@ -106,7 +129,7 @@ export class AddShift extends Component {
               placeholder='vault_money'
               name='vault_money'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].vault_money}
+              value={this.state.vault_money}
             ></input>
           </div>
           <div className='form-section'>
@@ -117,7 +140,7 @@ export class AddShift extends Component {
               placeholder='shift_money'
               name='shift_money'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].shift_money}
+              value={this.state.shift_money}
             ></input>
             <label htmlFor='jetwash'>Jetwash</label>
             <input
@@ -126,7 +149,7 @@ export class AddShift extends Component {
               placeholder='jetwash'
               name='jetwash'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].jetwash}
+              value={this.state.jetwash}
             ></input>
           </div>
           <h2>Galp Fleet & Local Credit</h2>
@@ -138,7 +161,7 @@ export class AddShift extends Component {
               placeholder='galp fleet'
               name='galp_fleet'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].galp_fleet}
+              value={this.state.galp_fleet}
             ></input>
             <label htmlFor='local_credit'>Local Credit</label>
             <input
@@ -147,7 +170,7 @@ export class AddShift extends Component {
               placeholder='local_credit'
               name='local_credit'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].local_credit}
+              value={this.state.local_credit}
             ></input>
           </div>
           <h2>Sales</h2>
@@ -159,7 +182,7 @@ export class AddShift extends Component {
               placeholder='affractions'
               name='affractions'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].affractions}
+              value={this.state.affractions}
             ></input>
             <label htmlFor='discount_card'>Local Credit</label>
             <input
@@ -168,7 +191,7 @@ export class AddShift extends Component {
               placeholder='discount_card'
               name='discount_card'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].discount_card}
+              value={this.state.discount_card}
             ></input>
           </div>
           <div className='form-section'>
@@ -179,7 +202,7 @@ export class AddShift extends Component {
               placeholder='discount'
               name='discount'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].discount}
+              value={this.state.discount}
             ></input>
             <label htmlFor='intern_consumption'>Consumption</label>
             <input
@@ -188,7 +211,7 @@ export class AddShift extends Component {
               placeholder='intern consumption'
               name='intern_consumption'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].intern_consumption}
+              value={this.state.intern_consumption}
             ></input>
           </div>
           <div className='form-section'>
@@ -199,7 +222,7 @@ export class AddShift extends Component {
               placeholder='devolutions'
               name='devolutions'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].devolutions}
+              value={this.state.devolutions}
             ></input>
             <label htmlFor='escapes'>Escapes</label>
             <input
@@ -208,7 +231,7 @@ export class AddShift extends Component {
               placeholder='escapes'
               name='escapes'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].escapes}
+              value={this.state.escapes}
             ></input>
           </div>
           <div className='form-section'>
@@ -219,7 +242,7 @@ export class AddShift extends Component {
               placeholder='genesis resume'
               name='resume_genesis'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].resume_genesis}
+              value={this.state.resume_genesis}
             ></input>
           </div>
           <div className='form-section'>
@@ -230,7 +253,7 @@ export class AddShift extends Component {
               placeholder='atm'
               name='atm'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].atm}
+              value={this.state.atm}
             ></input>
             <label htmlFor='visa'>VISA</label>
             <input
@@ -239,7 +262,7 @@ export class AddShift extends Component {
               placeholder='visa'
               name='visa'
               onChange={this.handleEditChange}
-              value={shiftdatarray[0].visa}
+              value={this.state.visa}
             ></input>
           </div>
           <div className='form-section'>
