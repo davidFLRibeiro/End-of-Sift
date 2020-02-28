@@ -22,17 +22,6 @@ export class LandingPage extends Component {
           <header>
             <h3>Start End of Shift</h3>
           </header>
-          <form className='sign-up form'>
-            <div>
-              <label htmlFor='username'>User Name</label>
-              <input type='text' name='username' id='username' />
-            </div>
-            <div>
-              <label htmlFor='password'>Password</label>
-              <input type='password' name='password' id='password' />
-            </div>
-            <button type='submit'>Sign up</button>
-          </form>
         </section>
       </div>
     );

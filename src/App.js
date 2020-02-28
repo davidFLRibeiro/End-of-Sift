@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import LandingPage from './LandingPage/LandingPage';
-import AddNewUser from './AddNewUser/AddNewUser';
 import AddShift from './AddShift/AddShift';
 import NavBar from './NavBar/NavBar';
 import EditShift from './EditShift/EditShift';
@@ -73,7 +72,6 @@ export class App extends Component {
               path='/EditShift/:shiftId'
               component={EditShift}
             ></Route>
-            <Route exact path='/AddNewUser' component={AddNewUser}></Route>
             <Route exact path='/Historic' component={Historic}></Route>
           </div>
         </Router>
