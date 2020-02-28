@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import './EditShift.css';
 import shiftContext from '../context/shiftContext';
 import config from '../config';
+import { withRouter } from 'react-router-dom';
+
 export class AddShift extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      id: 0,
       cupping: 0.0,
       vault_money: 0.0,
       shift_money: 0.0,
@@ -22,11 +23,12 @@ export class AddShift extends Component {
       atm: 0.0,
       visa: 0.0,
       devolutions: 0.0,
-
       shifts: []
     };
     this.handleEditChange = this.handleEditChange.bind(this);
   }
+
+  static contextType = shiftContext;
 
   handleEditChange(e) {
     const value = e.target.value;
@@ -39,7 +41,7 @@ export class AddShift extends Component {
 
     const shift = {
       id: this.state.id,
-      cupping: this.state.cupping,
+      cupping: parseInt(this.state.cupping),
       vault_money: this.state.vault_money,
       shift_money: this.state.shift_money,
       jetwash: this.state.jetwash,
@@ -68,17 +70,15 @@ export class AddShift extends Component {
         if (!res.ok) {
           return res.json().then(error => Promise.reject(error));
         }
-        return res.json();
       })
-      .then(data => {
-        this.setState({ shift: [...this.state.shifts, data] });
+      .then(() => {
+        this.context.shiftsEdit(shift);
+        this.props.history.push('/');
       })
       .catch(error => {
         console.log(error);
       });
   };
-
-  static contextType = shiftContext;
 
   componentDidMount() {
     const { shiftId } = this.props.match.params;
@@ -281,4 +281,4 @@ export class AddShift extends Component {
   }
 }
 
-export default AddShift;
+export default withRouter(AddShift);

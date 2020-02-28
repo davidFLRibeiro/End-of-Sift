@@ -23,12 +23,13 @@ export class AddShift extends Component {
       atm: 0.0,
       visa: 0.0,
       devolutions: 0.0,
-
       shifts: []
     };
     this.handleAddShift = this.handleAddShift.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
+
+  static contextType = shiftContext;
 
   handleChange(e) {
     const value = e.target.value;
@@ -70,12 +71,13 @@ export class AddShift extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState(shifts => {
+        /* this.setState(shifts => {
           const updateShift = this.state.shifts.push(data);
           return {
             updateShift
           };
-        });
+        });*/
+        this.context.shiftsUpdate(data);
         this.props.history.push('/Historic');
       })
       .catch(error => {
@@ -83,7 +85,6 @@ export class AddShift extends Component {
       });
   };
 
-  static contextType = shiftContext;
   render() {
     //console.log(this.context);
     return (

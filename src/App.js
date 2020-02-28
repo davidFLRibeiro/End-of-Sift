@@ -32,11 +32,35 @@ export class App extends Component {
       });
   }
 
+  shiftsUpdate = data => {
+    this.setState(shifts => {
+      const updateShift = this.state.shifts.push(data);
+      return {
+        updateShift
+      };
+    });
+  };
+
+  shiftsEdit = data => {
+    const editShifts = this.state.shifts.map(shift => {
+      if (shift.id === data.id) {
+        return data;
+      } else {
+        return shift;
+      }
+    });
+    console.log(editShifts);
+
+    this.setState({ shifts: editShifts });
+  };
+
   render() {
     const shiftList = {
-      shifts: this.state.shifts
+      shifts: this.state.shifts,
+      shiftsUpdate: this.shiftsUpdate,
+      shiftsEdit: this.shiftsEdit
     };
-    //console.log(shiftList);
+    console.log(shiftList);
     return (
       <shiftContext.Provider value={shiftList}>
         <Router>

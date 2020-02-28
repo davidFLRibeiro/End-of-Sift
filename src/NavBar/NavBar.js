@@ -17,19 +17,6 @@ export class NavBar extends Component {
             <li>
               <Link to='/Historic'>Historic</Link>
             </li>
-            <div class='topnav'>
-              <a href='#home' class='active'>
-                Logo
-              </a>
-              <div id='myLinks'>
-                <a href='#news'>Home</a>
-                <a href='#contact'>Add Shift</a>
-                <a href='#about'>Historic</a>
-              </div>
-              <a href='javascript:void(0);' class='icon' onclick='myFunction()'>
-                <i class='fa fa-bars'></i>
-              </a>
-            </div>
           </ul>
         </nav>
       </div>
