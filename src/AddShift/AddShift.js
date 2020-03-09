@@ -88,11 +88,11 @@ export class AddShift extends Component {
   render() {
     //console.log(this.context);
     return (
-      <div>
+      <div className='AddShift'>
         <div className='banner'>
           <h1>End of Shift</h1>
         </div>
-        <form className='form-section'>
+        <form className='form'>
           <div className='form-section'>
             <label htmlFor='cupping'>Nº of cupping</label>
             <input

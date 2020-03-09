@@ -1,64 +1,238 @@
-nav {
-  padding: 1% 0;
-  background-color: #aaa;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  display: inline;
-  font-family: 'Source Code Pro';
+a {
+  font-size: 16px;
+  font-family: 'Courier New';
+  color: whitesmoke;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-right: 10px;
+.menu {
+  border: 1px solid yellow;
+  padding-top: 0px !important;
+  margin-top: 0 !important;
+
+  border-bottom: 1px solid whitesmoke;
+  background-color: #00414f;
 }
 
-li {
-  display: inline;
-  margin-right: 15px;
+label {
+  margin-top: 0;
+  background-color: #00414f;
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: 14px;
+  font-family: 'Courier New';
 }
-
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
+#content {
+  background-color: #9acd32;
 }
+label,
+#content {
+  margin-top: 0 !important;
+  text-align: right;
+  height: 30px;
+  width: 100%;
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
+  display: inline-block;
 }
-
-.topnav #myLinks {
+#menu-toggle {
   display: none;
 }
+#menu {
+  background-color: #6499ab;
+  text-align: right;
+  color: whitesmoke;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  margin: 0 auto;
 
-.topnav a {
-  float: left;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  -webkit-transition: all 0.3s ease;
 }
 
-.topnav a.icon {
-  float: right;
+#menu a {
+  color: whitesmoke;
+  text-decoration: none !important;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+#menu-toggle:checked + #menu {
+  max-height: 100px;
 }
 
-.active {
-  background-color: #4caf50;
-  color: white;
+@media screen and (min-width: 480px) {
+  a {
+    font-size: 18px;
+    color: whitesmoke;
+  }
+
+  .menu {
+    padding-top: 0px !important;
+    margin-top: 0 !important;
+    height: 100%;
+    border: 1px solid whitesmoke;
+    background-color: #00414f;
+  }
+
+  label {
+    margin-top: 0;
+    background-color: #00414f;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 16px;
+  }
+  #content {
+    background-color: #9acd32;
+  }
+  label,
+  #content {
+    margin-top: 0 !important;
+    text-align: right;
+    height: 30px;
+    width: 100%;
+
+    display: inline-block;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  #menu {
+    background-color: #6499ab;
+    text-align: right;
+    color: whitesmoke;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    margin: 0 auto;
+
+    -webkit-transition: all 0.3s ease;
+  }
+
+  #menu a {
+    color: whitesmoke;
+    text-decoration: none !important;
+  }
+
+  #menu-toggle:checked + #menu {
+    max-height: 100px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  a {
+    font-size: 20px;
+    color: whitesmoke;
+  }
+
+  .menu {
+    padding-top: 0px !important;
+    margin-top: 0 !important;
+    height: 100%;
+    border: 1px solid whitesmoke;
+    background-color: #00414f;
+  }
+
+  label {
+    margin-top: 0;
+    background-color: #00414f;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 18px;
+  }
+  #content {
+    background-color: #9acd32;
+  }
+  label,
+  #content {
+    margin-top: 0 !important;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+
+    display: inline-block;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  #menu {
+    background-color: #6499ab;
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    margin: 0 auto;
+
+    -webkit-transition: all 0.3s ease;
+  }
+
+  #menu a {
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none !important;
+  }
+
+  #menu-toggle:checked + #menu {
+    max-height: 100px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  a {
+    font-size: 20px;
+    color: whitesmoke;
+  }
+
+  .menu {
+    padding-top: 0px !important;
+    margin-top: 0 !important;
+    height: 100%;
+    border: 1px solid whitesmoke;
+    background-color: #00414f;
+  }
+
+  label {
+    margin-top: 0;
+    background-color: #00414f;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 18px;
+  }
+  #content {
+    background-color: #9acd32;
+  }
+  label,
+  #content {
+    margin-top: 0 !important;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+
+    display: inline-block;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  #menu {
+    background-color: #6499ab;
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    margin: 0 auto;
+
+    -webkit-transition: all 0.3s ease;
+  }
+
+  #menu a {
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none !important;
+  }
+
+  #menu-toggle:checked + #menu {
+    max-height: 100px;
+  }
 }

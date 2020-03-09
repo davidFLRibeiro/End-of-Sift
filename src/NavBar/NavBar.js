@@ -5,21 +5,21 @@ import './NavBar.css';
 export class NavBar extends Component {
   render() {
     return (
-      <div>
-        <nav className='nav-bar'>
-          <ul>
-            <li>
-              <Link to='/'>Home</Link>
-            </li>
-            <li>
-              <Link to='/AddShift'>Add Shift</Link>
-            </li>
-            <li>
-              <Link to='/Historic'>Historic</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav className='menu'>
+        <label for='menu-toggle'>Menu</label>
+        <input type='checkbox' id='menu-toggle' />
+        <ul id='menu'>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/AddShift'>Add Shift</Link>
+          </li>
+          <li>
+            <Link to='/Historic'>Historic</Link>
+          </li>
+        </ul>
+      </nav>
     );
   }
 }

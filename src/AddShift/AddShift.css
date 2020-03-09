@@ -2,46 +2,41 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  color: #444;
-  text-align: center;
-  line-height: 1.5;
+body,
+html {
+  display: block;
+  padding: 0;
+  margin-top: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #00414f;
+  font-family: 'Courier New';
 }
 
-header {
-  padding: 45px 15px;
-  margin-top: 200px;
-  font-family: serif;
+.AddShift {
+  margin-top: 0px;
+  background-color: #00414f;
 }
 
-h2 {
+.form {
+  width: 90%;
+  border: 2px solid whitesmoke;
   margin: auto;
-}
-
-.banner {
-  margin-top: 200px;
-  font-family: 'Source Code Pro';
-}
-
-.form-section {
-  padding-top: 100px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  background-color: #aaa;
-  max-width: 670px;
-  min-width: 400px;
-  min-height: 70px;
-  font-family: 'Source Code Pro';
-  font-size: 16px;
+  background-color: #6499ab;
 }
 
 .form-section label {
-  margin: 5px 10px 5px 0;
+  margin-top: 0;
+  border: 1px solid whitesmoke;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Courier New';
+}
+
+label vault_money {
+  color: whitesmoke;
 }
 
 .form-section input {
@@ -50,15 +45,4 @@ h2 {
   padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
-}
-
-@media (max-width: 800px) {
-  .form-inline input {
-    margin: 10px 0;
-  }
-
-  .form-section {
-    flex-direction: column;
-    align-items: stretch;
-  }
 }

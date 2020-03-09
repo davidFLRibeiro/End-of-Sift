@@ -2,31 +2,130 @@
   box-sizing: border-box;
 }
 
-header {
-  margin-top: 25px;
-  padding: 20px 15px;
+body,
+html {
+  display: block;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.landingPage {
+  width: 100%;
+  height: 100vh;
+  margin-top: 0;
   text-align: center;
-}
-
-section {
-  min-height: 400px;
-  padding: 30px 15px;
-  background-color: #bbb;
-  text-align: center;
-}
-
-section:nth-child(even) {
-  background-color: #ddd;
-}
-
-#username {
-  margin-left: 10px;
-}
-
-#password {
-  margin-left: 20px;
+  background-color: #00414f;
+  padding-top: 150px;
 }
 
 .banner {
-  margin-top: 200px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.banner h1 {
+  font-size: 24px;
+  font-family: 'Courier New';
+  color: whitesmoke;
+  background-color: #00414f;
+}
+
+.banner h2 {
+  font-size: 20px;
+  font-family: 'Courier New';
+  color: whitesmoke;
+  background-color: #00414f;
+}
+
+.txt p,
+h3 {
+  font-size: 20px;
+  font-family: 'Courier New';
+  color: whitesmoke;
+  background-color: #00414f;
+  color: whitesmoke;
+  background-color: #00414f;
+}
+
+@media screen and (min-width: 480px) {
+  .landingPage {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    text-align: center;
+    background-color: #00414f;
+    padding-top: 0;
+  }
+
+  .banner {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .banner h1 {
+    font-size: 26px;
+    font-family: 'Courier New';
+    color: whitesmoke;
+    background-color: #00414f;
+  }
+
+  .banner h2 {
+    font-size: 22px;
+    font-family: 'Courier New';
+    color: whitesmoke;
+    background-color: #00414f;
+  }
+
+  .txt p,
+  h3 {
+    font-size: 22px;
+    font-family: 'Courier New';
+    color: whitesmoke;
+    background-color: #00414f;
+    color: whitesmoke;
+    background-color: #00414f;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .landingPage {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    text-align: center;
+    background-color: #00414f;
+    padding-top: 0;
+  }
+
+  .banner {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+    font-family: 'Courier New';
+    color: whitesmoke;
+    background-color: #00414f;
+  }
+
+  .banner h2 {
+    font-size: 24px;
+    font-family: 'Courier New';
+    color: whitesmoke;
+    background-color: #00414f;
+  }
+
+  .txt p,
+  h3 {
+    font-size: 24px;
+    font-family: 'Courier New';
+    color: whitesmoke;
+    background-color: #00414f;
+    color: whitesmoke;
+    background-color: #00414f;
+  }
 }
