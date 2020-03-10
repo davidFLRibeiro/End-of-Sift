@@ -129,6 +129,8 @@ button {
   }
 
   .AddShift {
+    margin: auto;
+    width: 60%;
     margin-top: 0px;
     background-color: #00414f;
   }
@@ -185,6 +187,8 @@ button {
   }
 
   .AddShift {
+    margin: auto;
+    width: 50%;
     margin-top: 0px;
     background-color: #00414f;
   }

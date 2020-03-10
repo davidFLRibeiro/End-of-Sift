@@ -20,6 +20,8 @@ html {
 }
 
 .editShift {
+  margin: auto;
+  width: 90%;
   margin-top: 0px;
   background-color: #00414f;
 }
@@ -75,6 +77,8 @@ button {
   }
 
   .AddShift {
+    margin: auto;
+    width: 70%;
     margin-top: 0px;
     background-color: #00414f;
   }
@@ -130,7 +134,9 @@ button {
     font-family: 'Courier New';
   }
 
-  .AddShift {
+  .editShift {
+    margin: auto;
+    width: 60%;
     margin-top: 0px;
     background-color: #00414f;
   }
@@ -187,7 +193,9 @@ button {
     font-family: 'Courier New';
   }
 
-  .AddShift {
+  .editShift {
+    margin: auto;
+    width: 50%;
     margin-top: 0px;
     background-color: #00414f;
   }
