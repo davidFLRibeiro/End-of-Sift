@@ -67,7 +67,7 @@ label,
     padding-top: 0px !important;
     margin-top: 0 !important;
     height: 100%;
-    border: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
     background-color: #00414f;
   }
 
@@ -126,7 +126,7 @@ label,
     padding-top: 0px !important;
     margin-top: 0 !important;
     height: 100%;
-    border: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
     background-color: #00414f;
   }
 
@@ -186,7 +186,7 @@ label,
     padding-top: 0px !important;
     margin-top: 0 !important;
     height: 100%;
-    border: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
     background-color: #00414f;
   }
 
@@ -195,7 +195,7 @@ label,
     background-color: #00414f;
     cursor: pointer;
     color: whitesmoke;
-    font-size: 18px;
+    font-size: 24px;
   }
   #content {
     background-color: #9acd32;
@@ -206,7 +206,6 @@ label,
     text-align: center;
     height: 30px;
     width: 100%;
-
     display: inline-block;
   }
   #menu-toggle {

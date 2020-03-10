@@ -14,6 +14,11 @@ html {
   font-family: 'Courier New';
 }
 
+.banner h1 {
+  text-align: center;
+  font-family: 'Courier New';
+}
+
 .AddShift {
   margin-top: 0px;
   background-color: #00414f;
@@ -22,12 +27,12 @@ html {
 .form {
   width: 90%;
   border: 2px solid whitesmoke;
-  margin: auto;
+  margin: 0 auto;
   background-color: #6499ab;
+  text-align: center;
 }
 
 .form-section label {
-  margin-top: 0;
   border: 1px solid whitesmoke;
   width: 80%;
   margin: auto;
@@ -35,14 +40,196 @@ html {
   font-family: 'Courier New';
 }
 
+h1 {
+  color: whitesmoke;
+  font-size: 18px;
+}
+
 label vault_money {
   color: whitesmoke;
 }
 
+.form-section {
+  margin: 0 auto;
+}
+
 .form-section input {
+  margin: auto;
   vertical-align: middle;
-  margin: 5px 10px 5px 0;
-  padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
+  width: 60%;
+}
+
+button {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 25%;
+}
+
+@media screen and (min-width: 480px) {
+  .banner h1 {
+    text-align: center;
+    font-family: 'Courier New';
+  }
+
+  .AddShift {
+    margin-top: 0px;
+    background-color: #00414f;
+  }
+
+  .form {
+    width: 90%;
+    border: 2px solid whitesmoke;
+    margin: 0 auto;
+    background-color: #6499ab;
+    text-align: center;
+  }
+
+  .form-section label {
+    border: 1px solid whitesmoke;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Courier New';
+  }
+
+  h1 {
+    color: whitesmoke;
+    font-size: 20px;
+  }
+
+  label vault_money {
+    color: whitesmoke;
+  }
+
+  .form-section {
+    margin: 0 auto;
+  }
+
+  .form-section input {
+    margin: auto;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 60%;
+  }
+
+  button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 25%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .banner h1 {
+    text-align: center;
+    font-family: 'Courier New';
+  }
+
+  .AddShift {
+    margin-top: 0px;
+    background-color: #00414f;
+  }
+
+  .form {
+    width: 90%;
+    border: 2px solid whitesmoke;
+    margin: 0 auto;
+    background-color: #6499ab;
+    text-align: center;
+  }
+
+  .form-section label {
+    border: 1px solid whitesmoke;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Courier New';
+    font-size: 20px;
+  }
+
+  h1 {
+    color: whitesmoke;
+    font-size: 20px;
+  }
+
+  label vault_money {
+    color: whitesmoke;
+  }
+
+  .form-section {
+    margin: 0 auto;
+  }
+
+  .form-section input {
+    margin: auto;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 60%;
+  }
+
+  button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 25%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .banner h1 {
+    text-align: center;
+    font-family: 'Courier New';
+  }
+
+  .AddShift {
+    margin-top: 0px;
+    background-color: #00414f;
+  }
+
+  .form {
+    width: 90%;
+    border: 2px solid whitesmoke;
+    margin: 0 auto;
+    background-color: #6499ab;
+    text-align: center;
+  }
+
+  .form-section label {
+    border: 1px solid whitesmoke;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Courier New';
+    font-size: 24px;
+  }
+
+  h1 {
+    color: whitesmoke;
+    font-size: 20px;
+  }
+
+  label vault_money {
+    color: whitesmoke;
+  }
+
+  .form-section {
+    margin: 0 auto;
+  }
+
+  .form-section input {
+    margin: auto;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 60%;
+  }
+
+  button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 25%;
+  }
 }

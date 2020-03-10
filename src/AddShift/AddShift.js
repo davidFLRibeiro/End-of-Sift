@@ -133,7 +133,7 @@ export class AddShift extends Component {
               value={this.state.jetwash}
             ></input>
           </div>
-          <h2>Galp Fleet & Local Credit</h2>
+          <h1>Galp Fleet & Local Credit</h1>
           <div className='form-section'>
             <label htmlFor='galp_fleet'>Galp Fleet</label>
             <input
@@ -154,7 +154,7 @@ export class AddShift extends Component {
               value={this.state.local_credit}
             ></input>
           </div>
-          <h2>Sales</h2>
+          <h1>Sales</h1>
           <div className='form-section'>
             <label htmlFor='affractions'>affractions</label>
             <input
