@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import shiftContext from '../context/shiftContext';
 import './Historic.css';
-import { Link, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 export class Historic extends Component {
   constructor(props) {
@@ -18,7 +18,6 @@ export class Historic extends Component {
 
   static contextType = shiftContext;
   render() {
-    console.log(this.context);
     const { shifts = [] } = this.context;
     if (this.state.redirect) {
       return <Redirect to={`/EditShift/${this.state.shiftEdit}`} />;

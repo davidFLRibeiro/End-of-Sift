@@ -6,7 +6,7 @@ export class NavBar extends Component {
   render() {
     return (
       <nav className='menu'>
-        <label for='menu-toggle'>Menu</label>
+        <label htmlFor='menu-toggle'>Menu</label>
         <input type='checkbox' id='menu-toggle' />
         <ul id='menu'>
           <li>

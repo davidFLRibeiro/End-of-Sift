@@ -32,7 +32,6 @@ export class AddShift extends Component {
 
   handleEditChange(e) {
     const value = e.target.value;
-    console.log(e.target.name, e.target.value);
     this.setState({ [e.target.name]: value });
   }
 
@@ -58,7 +57,6 @@ export class AddShift extends Component {
       devolutions: this.state.devolutions
     };
     const id = this.state.id;
-    console.log('made it to shift id', shift);
     fetch(`${config.API_ENDPOINT}api/shifts/${id}`, {
       method: 'PATCH',
       body: JSON.stringify(shift),
@@ -85,7 +83,6 @@ export class AddShift extends Component {
     const shiftdatarray = this.context.shifts.filter(
       shift => shift.id === parseInt(shiftId)
     );
-    console.log(this.props.match.params, shiftdatarray[0]);
     this.setState({
       id: shiftdatarray[0].id,
       cupping: shiftdatarray[0].cupping,

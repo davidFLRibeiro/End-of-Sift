@@ -23,7 +23,6 @@ export class App extends Component {
         return shiftsRes.json();
       })
       .then(shifts => {
-        // console.log(shifts);
         this.setState({ shifts });
       })
       .catch(error => {
@@ -48,7 +47,6 @@ export class App extends Component {
         return shift;
       }
     });
-    console.log(editShifts);
 
     this.setState({ shifts: editShifts });
   };
@@ -59,7 +57,7 @@ export class App extends Component {
       shiftsUpdate: this.shiftsUpdate,
       shiftsEdit: this.shiftsEdit
     };
-    console.log(shiftList);
+
     return (
       <shiftContext.Provider value={shiftList}>
         <Router>
