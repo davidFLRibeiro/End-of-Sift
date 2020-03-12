@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+//import { withRouter } from 'react-router-dom';
 import './AddShift.css';
 import shiftContext from '../context/shiftContext';
 import config from '../config';
@@ -33,7 +33,6 @@ export class AddShift extends Component {
 
   handleChange(e) {
     const value = e.target.value;
-    //console.log(e.target.name, e.target.value);
     this.setState({ [e.target.name]: value });
   }
 
@@ -71,12 +70,6 @@ export class AddShift extends Component {
         return res.json();
       })
       .then(data => {
-        /* this.setState(shifts => {
-          const updateShift = this.state.shifts.push(data);
-          return {
-            updateShift
-          };
-        });*/
         this.context.shiftsUpdate(data);
         this.props.history.push('/Historic');
       })

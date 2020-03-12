@@ -104,10 +104,6 @@ export class AddShift extends Component {
   }
 
   render() {
-    const { shiftId } = this.props.match.params;
-    const shiftdatarray = this.context.shifts.filter(
-      shift => shift.id === parseInt(shiftId)
-    );
     return (
       <div className='editShift'>
         <header role='banner'>
