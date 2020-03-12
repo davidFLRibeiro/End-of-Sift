@@ -1,13 +1,11 @@
 a {
-  font-size: 16px;
   font-family: 'Courier New';
-  color: whitesmoke;
+  font-weight: bold;
 }
 
 .menu {
   padding-top: 0px !important;
   margin-top: 0 !important;
-
   border-bottom: 1px solid whitesmoke;
   background-color: #00414f;
 }
@@ -16,9 +14,12 @@ label {
   margin-top: 0;
   background-color: #00414f;
   cursor: pointer;
-  color: whitesmoke;
-  font-size: 14px;
+  width: 50px;
+  color: white;
+  font-size: 18px;
   font-family: 'Courier New';
+  font-weight: bold;
+  padding-right: 20px;
 }
 #content {
   background-color: #9acd32;
@@ -49,8 +50,11 @@ label,
 }
 
 #menu a {
-  color: whitesmoke;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
   text-decoration: none !important;
+  margin-right: 20px;
 }
 
 #menu-toggle:checked + #menu {
@@ -76,7 +80,7 @@ label,
     background-color: #00414f;
     cursor: pointer;
     color: whitesmoke;
-    font-size: 16px;
+    font-size: 18px;
   }
   #content {
     background-color: #9acd32;
@@ -107,8 +111,10 @@ label,
   }
 
   #menu a {
+    font-size: 16px;
     color: whitesmoke;
     text-decoration: none !important;
+    font-weight: bold;
   }
 
   #menu-toggle:checked + #menu {
@@ -117,11 +123,6 @@ label,
 }
 
 @media screen and (min-width: 800px) {
-  a {
-    font-size: 20px;
-    color: whitesmoke;
-  }
-
   .menu {
     padding-top: 0px !important;
     margin-top: 0 !important;
@@ -155,19 +156,20 @@ label,
   #menu {
     background-color: #6499ab;
     text-align: center;
-    color: whitesmoke;
+    color: white;
     width: 100%;
     overflow: hidden;
     max-height: 0;
     padding: 0;
     margin: 0 auto;
-
     -webkit-transition: all 0.3s ease;
   }
 
   #menu a {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
     display: inline-block;
-    color: whitesmoke;
     text-decoration: none !important;
   }
 
@@ -177,11 +179,6 @@ label,
 }
 
 @media screen and (min-width: 1600px) {
-  a {
-    font-size: 20px;
-    color: whitesmoke;
-  }
-
   .menu {
     padding-top: 0px !important;
     margin-top: 0 !important;
@@ -194,8 +191,9 @@ label,
     margin-top: 0;
     background-color: #00414f;
     cursor: pointer;
-    color: whitesmoke;
-    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
   }
   #content {
     background-color: #9acd32;
@@ -226,7 +224,9 @@ label,
 
   #menu a {
     display: inline-block;
-    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
     text-decoration: none !important;
   }
 
