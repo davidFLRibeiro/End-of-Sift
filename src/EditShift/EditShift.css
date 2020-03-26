@@ -42,10 +42,11 @@ html {
   font-family: 'Courier New';
 }
 
-h1 {
+.form-section h1 {
   color: whitesmoke;
   font-size: 18px;
   text-align: center;
+  font-weight: bold;
 }
 
 label vault_money {
@@ -99,10 +100,11 @@ button {
     font-family: 'Courier New';
   }
 
-  h1 {
+  .form-section h1 {
     color: whitesmoke;
     font-size: 20px;
     text-align: center;
+    font-weight: bold;
   }
 
   label vault_money {
@@ -158,10 +160,11 @@ button {
     font-size: 20px;
   }
 
-  h1 {
+  .form-section h1 {
     color: whitesmoke;
     font-size: 20px;
     text-align: center;
+    font-weight: bold;
   }
 
   label vault_money {
@@ -217,10 +220,11 @@ button {
     font-size: 24px;
   }
 
-  h1 {
+  .form-section h1 {
     color: whitesmoke;
     font-size: 20px;
     text-align: center;
+    font-weight: bold;
   }
 
   label vault_money {
