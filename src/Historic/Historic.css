@@ -30,15 +30,14 @@ h1 {
 
 .shift_list ul li {
   display: block;
-  text-decoration: underline;
   margin-bottom: 15px;
   padding-left: 0;
   color: whitesmoke;
   font-family: 'Courier New';
   font-size: 12px;
   text-align: center;
-  border-bottom: 1px solid white;
   overflow-y: hidden;
+  text-decoration: underline;
 }
 
 .shift_list ul {
@@ -69,11 +68,11 @@ h1 {
     display: block;
     padding-left: 0;
     color: whitesmoke;
-    text-decoration: underline;
     font-family: 'Courier New';
     font-size: 18px;
     text-align: center;
     margin-bottom: 15px;
+    text-decoration: underline;
   }
 
   .shift_list ul {
@@ -103,13 +102,14 @@ h1 {
 
   .shift_list ul li {
     display: block;
-    text-decoration: underline;
+
     padding-left: 0;
     color: whitesmoke;
     font-family: 'Courier New';
     font-size: 20px;
     text-align: center;
     margin-bottom: 15px;
+    text-decoration: underline;
   }
 
   .shift_list ul {
@@ -141,11 +141,11 @@ h1 {
     display: block;
     padding-left: 0;
     color: whitesmoke;
-    text-decoration: underline;
     font-family: 'Courier New';
     font-size: 22px;
     text-align: center;
     margin-bottom: 15px;
+    text-decoration: underline;
   }
 
   .shift_list ul {

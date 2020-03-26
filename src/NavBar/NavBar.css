@@ -1,9 +1,6 @@
 a {
   font-family: 'Courier New';
-<<<<<<< HEAD
   color: white;
-=======
->>>>>>> fee750f1dcab1e49c3f9cbb1975b57b8360330a1
   font-weight: bold;
 }
 
@@ -18,15 +15,9 @@ label {
   margin-top: 0;
   background-color: #00414f;
   cursor: pointer;
-<<<<<<< HEAD
   color: #f5f5f5;
   font-weight: bold;
   font-size: 16px;
-=======
-  width: 50px;
-  color: white;
-  font-size: 18px;
->>>>>>> fee750f1dcab1e49c3f9cbb1975b57b8360330a1
   font-family: 'Courier New';
   font-weight: bold;
   padding-right: 20px;
@@ -64,10 +55,6 @@ label,
 }
 
 #menu a {
-<<<<<<< HEAD
-=======
-  font-size: 16px;
->>>>>>> fee750f1dcab1e49c3f9cbb1975b57b8360330a1
   font-weight: bold;
   color: white;
   text-decoration: none !important;
@@ -96,13 +83,8 @@ label,
   label {
     background-color: #00414f;
     cursor: pointer;
-<<<<<<< HEAD
     color: white;
     font-size: 16px;
-=======
-    color: whitesmoke;
-    font-size: 18px;
->>>>>>> fee750f1dcab1e49c3f9cbb1975b57b8360330a1
   }
 
   #content {
@@ -134,13 +116,8 @@ label,
   }
 
   #menu a {
-<<<<<<< HEAD
     font-weight: bold;
     color: white;
-=======
-    font-size: 16px;
-    color: whitesmoke;
->>>>>>> fee750f1dcab1e49c3f9cbb1975b57b8360330a1
     text-decoration: none !important;
     font-weight: bold;
   }
@@ -151,15 +128,12 @@ label,
 }
 
 @media screen and (min-width: 800px) {
-<<<<<<< HEAD
   a {
     font-size: 20px;
     font-weight: bold;
     color: white;
   }
 
-=======
->>>>>>> fee750f1dcab1e49c3f9cbb1975b57b8360330a1
   .menu {
     padding-top: 0px !important;
     margin-top: 0 !important;
@@ -221,15 +195,12 @@ label,
 }
 
 @media screen and (min-width: 1600px) {
-<<<<<<< HEAD
   a {
     font-size: 22px;
     font-weight: bold;
     color: white;
   }
 
-=======
->>>>>>> fee750f1dcab1e49c3f9cbb1975b57b8360330a1
   .menu {
     padding-top: 0px !important;
     margin-top: 0 !important;

@@ -10,11 +10,8 @@ html {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-<<<<<<< HEAD
   overflow: hidden;
-=======
   overflow-y: hidden;
->>>>>>> fee750f1dcab1e49c3f9cbb1975b57b8360330a1
 }
 
 .landingPage {
