@@ -8,8 +8,8 @@ html {
   padding: 0;
   margin-top: 0;
   height: 100%;
+  overflow: auto;
   width: 100%;
-  overflow-x: hidden;
   background-color: #00414f;
   font-family: 'Courier New';
 }
@@ -26,7 +26,7 @@ html {
 
 .form {
   width: 90%;
-  border: 2px solid whitesmoke;
+  border: 2px solid white;
   margin: 0 auto;
   background-color: #6499ab;
   text-align: center;
@@ -47,7 +47,7 @@ h1 {
 }
 
 label vault_money {
-  color: whitesmoke;
+  color: white;
 }
 
 .form-section {
@@ -57,8 +57,8 @@ label vault_money {
 .form-section input {
   margin: auto;
   vertical-align: middle;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: white;
+  border: 1px solid white;
   width: 60%;
 }
 
@@ -81,15 +81,16 @@ button {
 
   .form {
     width: 90%;
-    border: 2px solid whitesmoke;
+    border: 2px solid white;
     margin: 0 auto;
     background-color: #6499ab;
     text-align: center;
   }
 
   .form-section label {
-    border: 1px solid whitesmoke;
+    border: 1px solid white;
     width: 80%;
+    height: 100%;
     margin: auto;
     text-align: center;
     font-family: 'Courier New';
@@ -112,8 +113,8 @@ button {
   .form-section input {
     margin: auto;
     vertical-align: middle;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: white;
+    border: 1px solid white;
     width: 60%;
   }
 
@@ -139,15 +140,16 @@ button {
 
   .form {
     width: 90%;
-    border: 2px solid whitesmoke;
+    border: 2px solid white;
     margin: 0 auto;
     background-color: #6499ab;
     text-align: center;
   }
 
   .form-section label {
-    border: 1px solid whitesmoke;
+    border: 1px solid white;
     width: 80%;
+    height: 100%;
     margin: auto;
     text-align: center;
     font-family: 'Courier New';
@@ -156,12 +158,12 @@ button {
 
   h1 {
     font-weight: bold;
-    color: whitesmoke;
+    color: white;
     font-size: 20px;
   }
 
   label vault_money {
-    color: whitesmoke;
+    color: white;
   }
 
   .form-section {
@@ -171,8 +173,8 @@ button {
   .form-section input {
     margin: auto;
     vertical-align: middle;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: white;
+    border: 1px solid white;
     width: 60%;
   }
 
@@ -198,15 +200,16 @@ button {
 
   .form {
     width: 90%;
-    border: 2px solid whitesmoke;
+    border: 2px solid white;
     margin: 0 auto;
     background-color: #6499ab;
     text-align: center;
   }
 
   .form-section label {
-    border: 1px solid whitesmoke;
+    border: 1px solid white;
     width: 80%;
+    height: 100%;
     margin: auto;
     text-align: center;
     font-family: 'Courier New';
@@ -221,7 +224,7 @@ button {
   }
 
   label vault_money {
-    color: whitesmoke;
+    color: white;
   }
 
   .form-section {
@@ -231,8 +234,8 @@ button {
   .form-section input {
     margin: auto;
     vertical-align: middle;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: white;
+    border: 1px solid white;
     width: 60%;
   }
 

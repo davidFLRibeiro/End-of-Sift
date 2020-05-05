@@ -18,7 +18,7 @@ html {
   text-align: center;
   border: 1px solid #aaa;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 30px;
   width: 90%;
   font-family: 'Courier New';
 }
@@ -54,7 +54,7 @@ h1 {
     text-align: center;
     border: 1px solid #aaa;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 30px;
     width: 70%;
     font-family: 'Courier New';
   }
@@ -90,7 +90,7 @@ h1 {
     text-align: center;
     border: 1px solid #aaa;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 30px;
     width: 50%;
     font-family: 'Courier New';
   }
@@ -127,7 +127,7 @@ h1 {
     text-align: center;
     border: 1px solid #aaa;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 30px;
     width: 50%;
     font-family: 'Courier New';
   }
@@ -138,8 +138,6 @@ h1 {
   }
 
   .shift_list ul li {
-    display: block;
-    padding-left: 0;
     color: whitesmoke;
     font-family: 'Courier New';
     font-size: 22px;
@@ -149,7 +147,9 @@ h1 {
   }
 
   .shift_list ul {
-    padding-left: 0;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
   }
 
   .shift_list li:hover {

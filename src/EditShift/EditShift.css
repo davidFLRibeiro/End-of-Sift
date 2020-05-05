@@ -28,14 +28,14 @@ html {
 
 .form {
   width: 90%;
-  border: 2px solid whitesmoke;
+  border: 2px solid white;
   margin: 0 auto;
-  background-color: #6499ab;
+  background-color: #55899b;
   text-align: center;
 }
 
 .form-section label {
-  border: 1px solid whitesmoke;
+  border: 1px solid white;
   width: 80%;
   margin: auto;
   text-align: center;
@@ -43,14 +43,14 @@ html {
 }
 
 .form-section h1 {
-  color: whitesmoke;
-  font-size: 18px;
+  color: white;
+  font-size: 22px;
   text-align: center;
   font-weight: bold;
 }
 
 label vault_money {
-  color: whitesmoke;
+  color: white;
 }
 
 .form-section {
@@ -60,8 +60,8 @@ label vault_money {
 .form-section input {
   margin: auto;
   vertical-align: middle;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: white;
+  border: 1px solid white;
   width: 60%;
 }
 
@@ -86,14 +86,14 @@ button {
 
   .form {
     width: 90%;
-    border: 2px solid whitesmoke;
+    border: 2px solid white;
     margin: 0 auto;
-    background-color: #6499ab;
+    background-color: #55899b;
     text-align: center;
   }
 
   .form-section label {
-    border: 1px solid whitesmoke;
+    border: 1px solid white;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -101,14 +101,14 @@ button {
   }
 
   .form-section h1 {
-    color: whitesmoke;
+    color: white;
     font-size: 20px;
     text-align: center;
     font-weight: bold;
   }
 
   label vault_money {
-    color: whitesmoke;
+    color: white;
   }
 
   .form-section {
@@ -118,8 +118,8 @@ button {
   .form-section input {
     margin: auto;
     vertical-align: middle;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: white;
+    border: 1px solid white;
     width: 60%;
   }
 
@@ -145,14 +145,14 @@ button {
 
   .form {
     width: 90%;
-    border: 2px solid whitesmoke;
+    border: 2px solid white;
     margin: 0 auto;
-    background-color: #6499ab;
+    background-color: #55899b;
     text-align: center;
   }
 
   .form-section label {
-    border: 1px solid whitesmoke;
+    border: 1px solid white;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -161,14 +161,14 @@ button {
   }
 
   .form-section h1 {
-    color: whitesmoke;
+    color: white;
     font-size: 20px;
     text-align: center;
     font-weight: bold;
   }
 
   label vault_money {
-    color: whitesmoke;
+    color: wwhite;
   }
 
   .form-section {
@@ -178,8 +178,8 @@ button {
   .form-section input {
     margin: auto;
     vertical-align: middle;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: white;
+    border: 1px solid white;
     width: 60%;
   }
 
@@ -205,14 +205,14 @@ button {
 
   .form {
     width: 90%;
-    border: 2px solid whitesmoke;
+    border: 2px solid white;
     margin: 0 auto;
-    background-color: #6499ab;
+    background-color: #55899b;
     text-align: center;
   }
 
   .form-section label {
-    border: 1px solid whitesmoke;
+    border: 1px solid white;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -221,14 +221,14 @@ button {
   }
 
   .form-section h1 {
-    color: whitesmoke;
-    font-size: 20px;
+    color: white;
+    font-size: 24px;
     text-align: center;
     font-weight: bold;
   }
 
   label vault_money {
-    color: whitesmoke;
+    color: white;
   }
 
   .form-section {
@@ -238,8 +238,8 @@ button {
   .form-section input {
     margin: auto;
     vertical-align: middle;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: white;
+    border: 1px solid white;
     width: 60%;
   }
 

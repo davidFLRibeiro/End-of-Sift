@@ -23,7 +23,7 @@ export class AddShift extends Component {
       atm: 0.0,
       visa: 0.0,
       devolutions: 0.0,
-      shifts: []
+      shifts: [],
     };
     this.handleAddShift = this.handleAddShift.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -36,7 +36,7 @@ export class AddShift extends Component {
     this.setState({ [e.target.name]: value });
   }
 
-  handleAddShift = e => {
+  handleAddShift = (e) => {
     e.preventDefault();
 
     const shift = {
@@ -54,26 +54,26 @@ export class AddShift extends Component {
       resume_genesis: this.state.resume_genesis,
       atm: this.state.atm,
       visa: this.state.visa,
-      devolutions: this.state.devolutions
+      devolutions: this.state.devolutions,
     };
     fetch(`${config.API_ENDPOINT}api/shifts`, {
       method: 'POST',
       body: JSON.stringify(shift),
       headers: {
-        'content-type': 'application/json'
-      }
+        'content-type': 'application/json',
+      },
     })
-      .then(res => {
+      .then((res) => {
         if (!res.ok) {
-          return res.json().then(error => Promise.reject(error));
+          return res.json().then((error) => Promise.reject(error));
         }
         return res.json();
       })
-      .then(data => {
+      .then((data) => {
         this.context.shiftsUpdate(data);
         this.props.history.push('/Historic');
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
       });
   };
