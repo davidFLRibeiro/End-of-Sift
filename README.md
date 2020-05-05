@@ -20,3 +20,6 @@ All end of shift´s are registered, in case need to view or edit it through hist
 
 Edit Shift: https://imgur.com/pqyOKFa
 This page is where we can make changes if there are errors in the shift or if the user needs to make changes.
+
+the technology used in this project:
+JavaScript, JSX, CSS.
